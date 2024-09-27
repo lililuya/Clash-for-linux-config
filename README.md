@@ -1,5 +1,6 @@
 # Clash-for-linux-config
 ## 1.linux下的clash安装包
++ 注意，此方法需要linux具有图像化的界面才可以正常使用
 + (Clash-for-linux)[https://drive.google.com/file/d/1PS5MEw35xFqM9-lRAfHQ5hs_B5Ex2v_T/view?usp=sharing]
 ## 2.使用方法
 + 解压
