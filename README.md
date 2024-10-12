@@ -25,5 +25,18 @@ https:127.0.0.1:7890
 
 > 参考网址: https://clever99.com/linux-using-clash
 ## 2. linux下纯shell配置clash
-+ 需要时使用 (clash-linux-amd64.tar.gz)[]
++ 下载安装包 
+  + (clash-linux-amd64.tar.gz)[https://github.com/Kuingsmile/clash-core]
++ 二进制包下载完成之后解压
+  + `unzip clash*`
++ 加执行权限
+  + `chmod +x clash`
++ 执行
+  + `.clash -d .`
+  + 执行后，会同时开启HTTP代理和Sockets代理
+
++ 查看clash Dashboard
+  + 具体访问：http://127.0.0.1:9090(http://serverip:9090)
+   
+
 
