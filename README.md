@@ -1,8 +1,7 @@
 # Clash-for-linux-config
-## 1.linux下的clash安装包
-+ 注意，此方法需要linux具有图像化的界面才可以正常使用
+## 1.linux下的clash安装包（linux带图形界面的clash配置）
 + (Clash-for-linux)[https://drive.google.com/file/d/1PS5MEw35xFqM9-lRAfHQ5hs_B5Ex2v_T/view?usp=sharing]
-## 2.使用方法
+### 使用方法
 + 解压
 ```bash
 tar -xzvf Clash-*...
@@ -23,3 +22,8 @@ sudo chmod +x cfw
 http:127.0.0.1:7890
 https:127.0.0.1:7890
 ``` 
+
+> 参考网址: https://clever99.com/linux-using-clash
+## 2. linux下纯shell配置clash
++ 需要时使用 (clash-linux-amd64.tar.gz)[]
+
