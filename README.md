@@ -37,9 +37,10 @@ https:127.0.0.1:7890
 + **注意**
   + 需要做一个配置项
 ```bash
+# 可以选择配置在.bashrc里面，全局shell生效
 export https_proxy=http://127.0.0.1:7890 
-http_proxy=http://127.0.0.1:7890
-all_proxy=socks5://127.0.0.1:7890
+export http_proxy=http://127.0.0.1:7890
+export all_proxy=socks5://127.0.0.1:7890
 # 7890是你的代理端口，在config.yaml里面配置
 # config.yaml这个文件来自于你的订阅链接
 ```
