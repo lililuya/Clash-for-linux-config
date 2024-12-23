@@ -34,6 +34,15 @@ https:127.0.0.1:7890
 + 执行
   + `.clash -d .`
   + 执行后，会同时开启HTTP代理和Sockets代理
++ **注意**
+  + 需要做一个配置项
+```bash
+export https_proxy=http://127.0.0.1:7890 
+http_proxy=http://127.0.0.1:7890
+all_proxy=socks5://127.0.0.1:7890
+# 7890是你的代理端口，在config.yaml里面配置
+# config.yaml这个文件来自于你的订阅链接
+```
 
 + 查看clash Dashboard
   + 具体访问：http://127.0.0.1:9090(http://serverip:9090)
