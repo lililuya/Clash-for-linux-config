@@ -49,8 +49,8 @@ export all_proxy=socks5://127.0.0.1:7890
 ### 2.3 结合gdown下载大文件
 #### 2.3.1 正常下载一些小文件和文件夹
 - Google的文件或者文件夹的share格式
-- `https://drive.google.com/file/d/FILE_ID/view?usp=sharing`
-- `https://drive.google.com/file/d/xxxxxxxxxxxxxxxxxx/view?usp=sharing`
+	- `https://drive.google.com/file/d/FILE_ID/view?usp=sharing`
+	- `https://drive.google.com/file/d/xxxxxxxxxxxxxxxxxx/view?usp=sharing`
 - 下载方式
 ```bash
 gdown 'https://drive.google.com/uc?id=FILE_ID'
