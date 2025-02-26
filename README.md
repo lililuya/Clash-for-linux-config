@@ -15,7 +15,7 @@ sudo chmod +x cfw
 ```
 + 此时将有一个可视化的界面
   + 填入订阅链接
-  + 订阅链接参考(plane)[翻墙机场.com]
+  + 订阅链接参考[plane](翻墙机场.com)
 + 设置代理端口
   + Ubuntu-->Setting-->NetWork-->Proxy-->Mannual
 ```json
