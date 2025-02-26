@@ -15,7 +15,7 @@ sudo chmod +x cfw
 ./cfw
 ```
 ### 1.2 配置
-+ 填入订阅链接(链接或者config.yaml)
++ 填入订阅链接(链接或者`config.yaml`)
 + 订阅链接参考[plane](翻墙机场.com)
 + 设置代理端口
   + `Ubuntu-->Setting-->NetWork-->Proxy-->Mannual`
@@ -43,7 +43,7 @@ export all_proxy=socks5://127.0.0.1:7890
 # 7890是你的代理端口，在config.yaml里面配置
 # config.yaml这个文件来自于你的订阅链接
 ```
-+ 查看clash Dashboard
++ 查看 `clash Dashboard`
   + 具体访问：http://127.0.0.1:9090(http://serverip:9090)
    
 ### 2.3 结合gdown下载大文件
@@ -56,19 +56,19 @@ https://drive.google.com/file/d/xxxxxxxxxxxxxxxxxx/view?usp=sharing
 gdown 'https://drive.google.com/uc?id=FILE_ID'
 ```
 #### 2.3.2 下载异常情况
-- Too many users have viewed or downloaded this file recently. Please
+- `Too many users have viewed or downloaded this file recently. Please
 try accessing the file again later. If the file you are trying to
 access is particularly large or is shared with many people, it may
 take up to 24 hours to be able to view or download the file. If you
 still can't access a file after 24 hours, contact your domain
-administrator.  
+administrator.`  
   - 一般是下载文件过大，或者访问过多导致的问题
-  - 此时需要google api
-- 获取google api
-  - 进入链接 https://developers.google.com/oauthplayground/
-  - 在 Select the Scope 栏复制 https://www.googleapis.com/auth/drive.readonly
-  - 点击Authorize APIs 然后 Exchange authorization code for tokens
-  - 复制 Access token
+  - 此时需要 `google api`
+- 获取`google api`
+  - 进入链接 `https://developers.google.com/oauthplayground/`
+  - 在 `Select the Scope` 栏复制 `https://www.googleapis.com/auth/drive.readonly`
+  - 点击 `Authorize APIs` 然后 `Exchange authorization code for tokens`
+  - 复制 `Access token`
   - 在命令行终端运行
 ```bash
 	curl -H "Authorization: Bearer Access token" https://www.googleapis.com/drive/v3/files/FILE_ID?alt=media -o FILE_NAME
