@@ -47,20 +47,32 @@ export all_proxy=socks5://127.0.0.1:7890
   + 具体访问：http://127.0.0.1:9090(http://serverip:9090)
    
 ### 2.3 结合gdown下载大文件
+#### 2.3.1 正常下载一些小文件和文件夹
 - Google的文件或者文件夹的share格式
   `https://drive.google.com/file/d/FILE_ID/view?usp=sharing
 https://drive.google.com/file/d/xxxxxxxxxxxxxxxxxx/view?usp=sharing
 - 下载方式
-`gdown 'https://drive.google.com/uc?id=FILE_ID'`
-- **异常情况**
-  - Too many users have viewed or downloaded this file recently. Please
+```bash
+gdown 'https://drive.google.com/uc?id=FILE_ID'
+```
+#### 2.3.2 下载异常情况
+- Too many users have viewed or downloaded this file recently. Please
 try accessing the file again later. If the file you are trying to
 access is particularly large or is shared with many people, it may
 take up to 24 hours to be able to view or download the file. If you
 still can't access a file after 24 hours, contact your domain
 administrator.  
   - 一般是下载文件过大，或者访问过多导致的问题
-  -     
+  - 此时需要google api
+- 获取google api
+  - 进入链接 https://developers.google.com/oauthplayground/
+  - 在 Select the Scope 栏复制 https://www.googleapis.com/auth/drive.readonly
+  - 点击Authorize APIs 然后 Exchange authorization code for tokens
+  - 复制 Access token
+  - 在命令行终端运行
+```bash
+	curl -H "Authorization: Bearer Access token" https://www.googleapis.com/drive/v3/files/FILE_ID?alt=media -o FILE_NAME
+```
 
 
 ### 3. 参考
