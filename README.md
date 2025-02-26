@@ -34,7 +34,7 @@ chmod +x clash
 # 执行后，会同时开启HTTP代理和Sockets代理
 ```
 
-### 2.2 zai 在终端中使用
+### 2.2 在终端中使用
 ```bash
 # 可以选择配置在.bashrc里面，全局shell生效
 export https_proxy=http://127.0.0.1:7890 
