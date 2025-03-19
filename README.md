@@ -17,8 +17,8 @@ sudo chmod +x cfw
 ### 1.2 配置
 + 填入订阅链接(链接或者`config.yaml`)
 + 订阅链接参考
-	+ [plane](翻墙机场.com)
- 	+ [uucuk](uucuk.com) 
+	+ [plane](www.翻墙机场.com)
+ 	+ [uucuk](www.uucuk.com) 
 + 设置代理端口
   + `Ubuntu-->Setting-->NetWork-->Proxy-->Mannual`
   ```json
